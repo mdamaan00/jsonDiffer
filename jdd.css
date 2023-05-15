@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Grotesk, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 h1 {
@@ -24,9 +24,6 @@ a {
     color: #36c;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 #main {
     margin: 25px auto;
@@ -43,7 +40,7 @@ pre.codeBlock .codeLine,
 pre.codeBlock .line-number,
 div.codeBlock .codeLine,
 div.codeBlock .line-number {
-  font:normal normal 13px/16px monospace;
+  font:normal normal 14px/16px monospace;
   font-family: Monaco, monospace;
   color:black;
   display:block;
@@ -82,7 +79,6 @@ pre.codeBlock .cl {
 div.diffcontainer {
     position: relative;
     margin: 0 auto;
-    display: none;
 }
 
 div.left {
@@ -220,28 +216,6 @@ div.codeLine span.selected {
     color: #47e;
 }
 
-canvas.center {
-    position: absolute;
-    left: 40%;
-    width: 20%;
-    height: 100%;
-    top: 0;
-}
-
-textarea {
-    width: 100%;
-    min-height: 500px;
-    padding: 5px;
-    background: #f3f3f3;
-    border-radius: 4px;
-    resize: vertical;
-    white-space: pre;
-    word-wrap: normal;
-}
-
-textarea.error {
-    border-color: #FBC2C4;
-}
 
 pre.error {
     background: #FBE3E4;
@@ -266,24 +240,7 @@ span.filterBlock input {
     height: 4em;
 }
 
-#report button {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 56.5%;
-    border-color: #36c;
-    color: #36c;
-}
 
-button {
-    font-size: 1.2em;
-    color: #333;
-    border: 1px solid #333;
-    border-radius: 4px;
-    background: white;
-    padding: .5rem .7rem;
-	cursor: pointer;
-}
 
 .weak {
     color: #333;
@@ -298,23 +255,4 @@ button {
 
 p {
     margin-bottom: 1em;
-}
-
-.header {
-    height: 8em;
-}
-
-span.fileInput {
-    margin-left: 2em;
-	margin-top: 0.5em;
-	display: inline-block;
-}
-
-.throbber-loader:not(:required) {
-    display: none;
-}
-
-.progress .throbber-loader:not(:required) {
-    display: block;
-    margin: 5px auto;
 }
